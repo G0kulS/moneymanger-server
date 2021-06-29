@@ -16,10 +16,12 @@ const DB = "Money";
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      
+      type: 'OAuth2',
       user: "unnamedbot2oo5@gmail.com",
-      pass: "Liverpool@2019"
-      
+      pass: "Liverpool@2019",
+      clientId: "1038463972918-tlu739mbpl08tah8e8p3uq5to2kvh2mq.apps.googleusercontent.com",
+      clientSecret: "WCAEDI34AoGnMTukh4RZ__wB",
+      refreshToken: "1//04G8mQC7d3f__CgYIARAAGAQSNwF-L9IrGw9gIdFyuu2eYDTn31CRzMilorT-naE3CnTym01uljmn1KzorgzVuz51G-UZXf1-bWQ"
     }
   });
 
